@@ -1,0 +1,35 @@
+nav{
+    height: 50px;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#nav3{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    color: chocolate;
+    text-decoration: none;
+
+}
+#nav2{
+    height: 50px;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav2>#div2{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
