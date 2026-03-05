@@ -1,54 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navbar Example</title>
-
-<style>
-nav{
-    display:flex;
-    justify-content:space-between;
-    background-color:#333;
-    padding:10px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-right:15px;
-}
-
-nav input{
-    padding:5px;
-}
-
-button{
-    padding:5px 10px;
-}
-</style>
-
-</head>
-
-<body>
-
-<nav>
-
-<div>
-<a href="#">Home</a>
-</div>
-
-<div>
-<input type="text" placeholder="Search">
-<a href="#">About Us</a>
-<a href="#">DSD</a>
-<button>Login</button>
-</div>
-
-</nav>
-
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,31 +7,55 @@ button{
     <title>Document</title>
 </head>
 <style>
-    div{
+    div {
         height: 50px;
         width: 100%;
-        background-image: linear-gradient(to right,black,aqua);
+        background-image: linear-gradient(to right, black, aqua);
         display: flex;
         justify-content: space-around;
-        align-items:center;
-        
-    }
-    button{background-color: black;
-    color:white;}
-  input{width: 300px;}
+        align-items: center;
+        padding: 10px;
 
+    }
+
+    * {
+        margin: 0%;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+    }
+
+    input {
+        width: 500px;
+        border-radius: 20px;
+        height: 30px;
+    }
+
+    nav>div>a:first-child {
+        color: aliceblue;
+    }
+
+    nav>div {
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
 </style>
+
 <body>
 
-
     <nav>
-            <div>
-            <a href="home">home</a> 
-            <input type="text" placeholder="Search here">
+        <div>
+            <a href="home">home</a>
+            <input type="text" placeholder="Search the products here 🫡">
             <a href="">About us </a>
             <a href="ghgh">Help</a>
             <button>login</button>
-            </div>
+        </div>
 
     </nav>
 </body>
