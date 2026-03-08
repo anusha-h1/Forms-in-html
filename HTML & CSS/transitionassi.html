@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,81 +6,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <meta http-equiv="refresh" content="6"> -->
 </head>
 <style>
-    body>div {
-        background-color: aqua;
+    h1{
+        text-align: center;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .main {
+        background-color: rgb(24, 195, 195);
         height: 600px;
         width: 600px;
-        /* display: flex;
-        justify-content: space-evenly;
-        align-items: start; */
-          transition: all 5s linear 0s;
+        margin-top: 20px;
+        margin-left: 40px;
+        padding: 20px;
     }
-    body>div>div:nth-child(1){
+    .m1{
         display: flex;
-        justify-content: space-around;
+        justify-content: start;
         align-items: start;
-    }
-    body>div>div:nth-child(2){
-        display: flex;
-        justify-content: space-evenly;
-        align-items: end;
-    }
-img{
-    height: 200px;
-    width: 200px;
-    margin: 1px ;
-}
-body>div>div:nth-child(1)>div:nth-child(1)>button:hover{
-    background-image: url(https://alchetron.com/cdn/radhika-pandit-24e71322-93b0-4ae1-8992-615a7982f6a-resize-750.jpeg);
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    margin:1px ;
-    transition: all 5s linear 0s;
         
-}
+    }
+    button{
+        height: 300px;
+        width: 200px;
+        border: none;
+        border: 2px solid rgb(41, 222, 242);
+    }
 
-
-
-
-
-
-
-/* 
-  body>div:nth-child(3)>div:nth-child(2)
-    {
-        background-color: black;
-        height: 250px;
-        width: 250px;
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        border: 20px solid lightgoldenrodyellow;
-        background-image: url(https://www.sportsyaari.com/images/posts/2025/Rohit-Sharma-7.jpg);
+    .b1 {
+        background-image: url(https://i.pinimg.com/736x/20/80/f1/2080f1abf087c0f7866cb640fd59c0df.jpg);
+        height: 300px;
+        width: 200px;
         background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center;
+        background-size: cover;
+          transition: all 1s linear 2s;
        
-    } */
+    }
 
+    .b1:hover {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWKieRfcahkVnzlyc91zcb1Z8cOkZHaS5XJQ&s);
+         transform: rotate(180deg);
+        
+
+    }
+    .b2{
+        background-image: url(https://media.assettype.com/deccanherald%2Fimport%2Fsites%2Fdh%2Ffiles%2Farticle_images%2F2018%2F08%2F04%2Fdiganth1533402030.jpg?w=undefined&auto=format%2Ccompress&fit=max);
+          height: 300px;
+          width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+          transition: all 1s linear 2s;
+    }
+    .b2:hover{
+        background-image: url(https://images.filmibeat.com/ph-big/2011/10/1317443270439447.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 200px;
+        transform: scaleX(2);
+      
+    }
+    .b3{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV15G6gDt5WTUsvNrhoMfRBouRpTUIBhnH7Q&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .b3:hover{
+        background-image: url(https://moviebeauty.wordpress.com/wp-content/uploads/2011/01/rachel-mcadams_dot_net-thenotebo-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1s linear 2s;
+        transform: scaleY(2);
+
+    }
+
+    .m2{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+       
+
+    }
+
+    .b4{
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/corey-mylchreest-my-oxford-year-688c7f8652c1d.jpg?crop=0.365xw:0.550xh;0.135xw,0.0817xh&resize=1200:*);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .b4:hover{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSgF5POvnvhJi6la5hbq66taasQ2AbyunlQ&s);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 2s linear 4s;
+        transform:translateX(-200px)rotate(360deg)
+         
+    }
+    .b5{
+        background-image: url(https://ntvb.tmsimg.com/assets/assets/288463_v9_bc.jpg?w=360&h=480);
+        background-size: cover;
+        background-repeat:no-repeat;
+        
+    }
+    .b5:hover{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi-3F8-b5UkRhpXPRSzLlLrMZr4Y9CXEmQg&s);
+         background-size: cover;
+        background-repeat:no-repeat;
+         transform: skewX(180deg);
+          transition: all 2s linear 7s;
+
+       
+        
+    }
+    .b6{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnju2AUzE6bxZ_CGd8KLEpNvqlpAET6Pakg&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+    .b6:hover{
+        background-image: url(https://media.gettyimages.com/id/908311/photo/actress-jennifer-aniston-star-as-rachel-green-of-nbcs-comedy-series-friends.jpg?s=612x612&w=gi&k=20&c=96f_goT1etNmSk36EGT8kR8PKTZOYfc67KOIgrcxuQQ=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: skewY(360deg);
+        transition: all 2s linear 6s;
+    }
 </style>
 
+
 <body>
-<h1>TRANSITIONS:-</h1>
-<div> 
-        <div>
-        <div><button><img src="http://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyBOmQBfdX-Xzxn6UmWaXQTX-TWbDFUSisA&s" alt=""></button></div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSft9P5fTWj91YZdSwWuyKyzFA6UTdGMNi7Rw&s" alt=""></div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7YpGP8wEpBTQ8Z0MXUKdQL9ObddoNl8avw&s" alt=""></div>
+    <h1>Transitions</h1>
+    <hr>
+    <div class="main">
+        <div class="m1">
+            <div><button class="b1"></button></div>
+            <div><button class="b2"></button></div>
+            <div><button class="b3"></button></div>
         </div>
-     <div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NEFKhVtwepcxrP7piUJ948t6m7cDTgAFtw&s" alt=""></div>
-        <div><img src="https://statcdn.fandango.com/MPX/image/NBCU_Fandango/919/231/MeBeforeYou_Trailer2OG.jpg" alt=""></div>
-        <div><img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2020/07/1710x900-travel-feature-1-5.jpg?w=1600&h=900&fit=crop" alt=""></div>
-         </div>
-</div>
+        <div class="m2">
+            <div><button class="b4"></button></div>
+            <div><button class="b5"></button></div>
+            <div><button class="b6"></button></div>
+        </div>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
