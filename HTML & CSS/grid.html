@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="refresh" content="1">
+</head>
+<style>
+  main>div{
+
+    height: 600px;
+    background-color: black;
+    display: grid;
+    grid-template-columns:  30% 30% 30%;
+    grid-template-rows: 50px 250px 100px 100px 50px;
+    justify-content: space-around;
+    gap: 10px 5px;
+
+  }
+
+main>div{
+    background-color: aqua;
+    border: 1px solid black;
+}
+main>div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+main>div:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+main>div:nth-child(3){
+       grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+    
+}
+main>div:nth-child(4){
+       grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+    
+}
+
+
+
+</style>
+<!-- main>div{grid-items}*8 -->
+<body>
+    <main>
+        <div>grid items 1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        
+    </main>
+</body>
+</html>
