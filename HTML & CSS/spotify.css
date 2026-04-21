@@ -8,9 +8,11 @@ background-color:black;
 /* position: fixed; */
     }
 
-    * {
-        margin: 0;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
     nav>div:nth-child(1) {
         display: flex;
@@ -146,3 +148,47 @@ background-color: #121212;
         justify-content: space-between;
         align-items: center;
     }
+    .main{
+        background-color: #15161b;
+        height: 100%;
+        width: 100%;
+        margin-top: 70px;
+        border-radius: 0px;
+        position: absolute;
+        top: 0px;
+        left: 340px;
+       
+    }
+    body {
+    overflow-x: hidden;
+}
+#song1{
+    /* height: 150px;
+    width: 200px; */
+    position: relative;
+    left: 10px;
+    TOP: 10px;
+}
+
+#songs {
+    display: flex;
+    gap: 60px;              
+    align-items: flex-start;
+    flex-wrap: nowrap; 
+    position: relative;
+    left: 10px ;
+    top:10px; 
+}
+#songs img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.song-card {
+    min-width: 180px;
+    color: white;
+    cursor: pointer;
+    text-align: center;   /* ✅ THIS LINE */
+}
