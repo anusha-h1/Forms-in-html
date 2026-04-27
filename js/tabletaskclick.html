@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let table = document.createElement("table");
+        table.setAttribute("border", "3");
+        let tr1 = document.createElement("tr");
+        let th1 = document.createElement("th");
+        th1.innerText = "Emp no";
+        let th2 = document.createElement("th");
+        th2.innerText = "emp txt";
+        let th3 = document.createElement("th");
+        th3.innerText = "Emp Image";
+        tr1.appendChild(th1);
+        tr1.appendChild(th2);
+        tr1.appendChild(th3);
+        table.appendChild(tr1);
+        let tr2 = document.createElement("tr");
+        let td1 = document.createElement("td");
+        td1.innerText = "1";
+        let td2 = document.createElement("td");
+        td2.innerText = "chotabheem";
+        let td3 = document.createElement("td");
+        let img1 = document.createElement("img");
+        img1.setAttribute("src", "https://i.pinimg.com/236x/85/64/28/856428b2b76e9bb90950c1592114737b.jpg");
+        img1.width = 150;
+        img1.style.display = "none";
+
+        tr2.appendChild(td1);
+        tr2.appendChild(td2);
+        tr2.appendChild(td3);
+        td3.appendChild(img1);
+        table.appendChild(tr2);
+        let tr3 = document.createElement("tr");
+        let td4 = document.createElement("td");
+        td4.innerText = "2";
+        let td5 = document.createElement("td");
+        td5.innerText = "chutki";
+        let td6 = document.createElement("td");
+        let img2 = document.createElement("img");
+        img2.setAttribute("src", "https://cdn.dribbble.com/userupload/29640083/file/original-bc0ad08a288c65c8eaede5ab371d9b27.jpg?resize=400x300");
+           img2.width = 150;
+        img2.style.display = "none";
+
+        img2.width = 150;
+        tr3.appendChild(td4);
+        tr3.appendChild(td5);
+        tr3.appendChild(td6);
+        td6.appendChild(img2);
+        table.appendChild(tr3);
+       
+
+        td2.addEventListener("mouseover", () => {
+            img1.style.display = "block";
+        })
+        td2.addEventListener("mouseout", () => {
+            img1.style.display = "none";
+        })
+        td5.addEventListener("mouseover", () => {
+                img2.style.display = "block";
+            })
+        td5.addEventListener("mouseout", () => {
+            img2.style.display = "none";
+        })
+         
+        let cells=table.querySelectorAll("td","th");
+        cells.forEach((cell)=>{
+            cell.style.padding="60px";
+            cell.style.textAlign="center";
+         });
+
+         document.body.appendChild(table);
+    </script>
+</body>
+
+</html>

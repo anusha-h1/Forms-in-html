@@ -1,0 +1,37 @@
+#container{
+    border: 20px solid black;
+    width: 50px;
+    border: none;
+
+}
+
+#ddown{
+    border: 1px solid black;
+   box-shadow: 1px 1px 1px 2px rgb(62, 47, 47);
+    height: 80px;
+    width: 180px;
+    border: none;
+}
+
+#ddown{
+    display: none;
+}
+b{
+    border: 1px solid red;
+    background-color: black;
+    color: aliceblue;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+#ddown>div:hover{
+    text-decoration-line: underline;
+    background-color: rgb(red, green, blue);
+    color: rgb(45, 42, 15);
+    background-color: blanchedalmond;
+}
+#ddown>div{
+    background-color: aliceblue;
+    color: rgb(29, 12, 12)
+   
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* NAVBAR */
+nav{
+    height:40px;
+    width:100%;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+}
+
+/* LEFT */
+nav > div:first-child{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+/* RIGHT */
+nav > div:last-child{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/* COMMON DROPDOWN PARENT */
+.dropdown{
+    position:relative;
+    cursor:pointer;
+}
+
+/* DROPDOWN BOX */
+.dropdown-content{
+    position:absolute;
+    top:40px;
+    left:0;
+    width:100vw;
+    background:white;
+    color:black;
+    display:none;
+    padding:20px;
+    box-shadow:0px 2px 5px black;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ITEMS */
+.dropdown-content div{
+    margin:8px 0;
+}
+
+.dropdown-content div:hover{
+    color:red;
+    cursor:pointer;
+}
+
+/* SPORTS GRID */
+.sports-menu{
+    display:flex;
+    gap:40px;
+}
+
+button{
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<!-- LEFT SIDE -->
+<div>
+
+    <img width="30" height="30"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmEw8TrscvmCGKcZO9Z9g0sfzQv2gHyWvz2g&s">
+
+    <!-- NEW -->
+    <div class="dropdown">
+        New
+        <div class="dropdown-content">
+            <div>Men's New Arrivals</div>
+            <div>Women's New Arrivals</div>
+            <div>Kids New Arrivals</div>
+            <div>Other New Arrivals</div>
+        </div>
+    </div>
+
+    <!-- SPORTS -->
+    <div class="dropdown">
+        Sports
+        <div class="dropdown-content">
+            <div class="sports-menu">
+
+                <div>
+                    <div><b>Running</b></div>
+                    <div>Running Store</div>
+                    <div>NITRO</div>
+                    <div>Road Running</div>
+                    <div>Race Day</div>
+                    <div>Trail Running</div>
+                </div>
+
+                <div>
+                    <div><b>Training</b></div>
+                    <div>Gym Wear</div>
+                    <div>Shoes</div>
+                    <div>Accessories</div>
+                </div>
+
+                <div>
+                    <div><b>Football</b></div>
+                    <div>Manchester City</div>
+                    <div>AC Milan</div>
+                    <div>Indoor Shoes</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div>Men</div>
+    <div>Women</div>
+    <div>Kids</div>
+    <div>Sale</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+<div>
+    <button>Search</button>
+    <i class="fa-regular fa-heart"></i>
+    <i class="fa-solid fa-cart-arrow-down"></i>
+    <i class="fa-solid fa-user"></i>
+</div>
+
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let input1=document.querySelector("#num1")
+let input2=document.querySelector("#num2")
+let result=document.querySelector("i")
+//add
+let add=document.querySelector("#Addi")
+add.addEventListener("click",()=>{
+    var res=Number(input1.value)+Number(input2.value)
+    result.innerText=res; 
+})
+//sub
+let sub=document.querySelector("#sub")
+sub.addEventListener("click",()=>{
+    var res=Number(input1.value)-Number(input2.value)
+        result.innerText=res; 
+})
+//mul
+let mul=document.querySelector("#mul")
+mul.addEventListener("click",()=>{
+    var res=Number(input1.value)*Number(input2.value)
+        result.innerText=res; 
+})
+//div
+let div=document.querySelector("#div")
+div.addEventListener("click",()=>{
+    var res=Number(input1.value)/Number(input2.value)
+        result.innerText=res; 
+        if (input2.value == 0) {
+    result.innerText = "Cannot divide by 0";
+}
+})
+//clr
+let clr=document.querySelector("#clear")
+clr.addEventListener("click",()=>{
+    input1.value=" ";
+    input2.value=" ";
+    result.innerText=" ";
+})
+    </script>
+</body>
+</html>

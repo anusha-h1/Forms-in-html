@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+    <style>
+        li {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Tasks</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            let task = document.getElementById("taskInput").value;
+
+            if (task.trim() === "") {
+                alert("Enter a task");
+                return;
+            }
+
+            // Create list item
+            let li = document.createElement("li");
+            li.textContent = task;
+
+            // Create delete (❌) button
+            let delBtn = document.createElement("button");
+            delBtn.textContent = "❌";
+
+            // Remove task when clicked
+            delBtn.onclick = function () {
+                li.remove();
+            };
+
+            // Add button to list item
+            li.appendChild(delBtn);
+
+            // Add list item to ul
+            document.getElementById("taskList").appendChild(li);
+
+            // Clear input
+            document.getElementById("taskInput").value = "";
+        }
+    </script>
+
+</body>
+</html>

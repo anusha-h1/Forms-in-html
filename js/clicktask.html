@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 60px;
+            color: red;
+            display: inline-block;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 1s linear;
+        }
+
+        div {
+            width: 20vw;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 80vw;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+    </div>
+
+    <h1>
+        ->>
+    </h1>
+
+    <script>
+        let h1 = document.querySelector("h1");
+        h1.addEventListener("mouseover", () => {
+            h1.style.transform = "translateX(1300px)"
+        })
+        h1.addEventListener("mouseout", () => {
+            h1.style.transform="translateX(0px)"
+        });
+
+    </script>
+</body>
+
+</html>
